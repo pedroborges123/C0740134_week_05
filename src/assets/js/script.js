@@ -13,16 +13,17 @@ function sum(a, b) {
 
 function arrays() {
     var pens;
-    pens = ['green',"blue", 'red', "gray", "black"];
-    console.log(pens);
-    pens.push("white");
-    console.log(pens);
-    pens.push("#056598");
-    console.log(pens);
-    pens.forEach(function (t) {
+    pens = new Array('green',"blue", 'red', "gray", "black");
+    markers = pens;
+    console.log(markers);
+    markers.push("white");
+    console.log(markers);
+    markers.push("#056598");
+    console.log(markers);
+    markers.forEach(function (t) {
         alert(t);
     });
 
-    alert("Length of array is: " + pens.length);
-    console.log("Length of array is:", pens.length);
+    alert("Length of array is: " + markers.length);
+    console.log("Length of array is:", markers.length);
 }
